@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#circle{
+    pointer-events: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .7s;
+    mix-blend-mode: difference;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 9999;
+}
+#main{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    font-family: General Sans;
+    color: white;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 40px;
+}
+#hero .nav{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    overflow: hidden;
+}
+.nav h4{
+    cursor: pointer;
+}
+.nav h4:nth-child(1){
+    font-weight: 500;
+    letter-spacing: .1px;
+    font-size: 18px;
+    height: 25px;
+}
+.scale{
+    position: relative;
+    overflow: hidden;
+}
+.scale .line{
+    position: absolute;
+    height: .5px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+    left: 0;
+}
+#hero .mid{
+    height: 78%;
+    margin-top: 150px;
+    position: relative;
+}
+.expose{
+    overflow: hidden;
+    height: fit-content;
+}
+.expose2{
+    overflow: hidden;
+    height: fit-content;
+}
+.mid h1{
+    font-size: 10.5vw;
+    line-height: 9vw;
+    opacity: .65;
+    letter-spacing: 2px;
+}
+.mid .inMid{
+    width:fit-content;
+    padding-left: 9.5vw;
+}
+.mid .inMid h4{
+    font-size: 1vw;
+    text-align: right;
+}
+.btmMid{ 
+    width: fit-content;
+    font-size: 1vw;
+    position: absolute;
+    right: 0;
+    line-height: 2vw;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.smalltxt{
+    margin-top: 1.2vw;
+}
+.btmMid h4:nth-child(2){
+    text-align: right;
+}
+.heroFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 1px;
+}
+.heroFooter h4{
+    cursor: pointer;
+    font-size: 15px;
+
+}
+#hero .icons{
+    display: flex;
+    gap: 3px;
+    opacity: .8;
+}
+.icons h4{
+    width: 25px;
+    height: 25px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#second{
+    width: 100%;
+    min-height: 100vh;
+    text-transform: uppercase;
+    padding: 15vw 40px;
+    padding-right: 105px;
+}
+#second .txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #888;
+    padding: 40px 0;
+    position: relative;
+}
+#second .txt img{
+    pointer-events: none;
+    height: 150%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    opacity: 0;
+}
+#second .txt h1{
+    font-size: 7.5vw;
+    opacity: .7;
+}
+#second .txt h5{
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+#second .txtLast{
+    border-bottom: 1px solid #888;
+}
+#about{
+    display: flex;
+    align-items: center;
+    padding-right: 105px;
+    gap: 7vw;
+}
+#about .c1{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+.c1 img{
+    width: 18vw;
+}
+#about .c2{
+    width: 500px;
+}
+.c2 h5{
+    font-weight: 200;
+    opacity: .7;
+}
+.c2 h4{
+    line-height: 1.8;
+    font-weight: 200;
+    margin-bottom: 3vw;
+}
+.c2 a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 18px;
+    border-radius: 100px;
+}
+#subscribe{
+    margin-top: 12vw;
+    padding-left: 40px;
+    line-height: 2;
+    letter-spacing: .5px;
+}
+#subscribe .f{
+    font-weight: 200;
+    opacity: .7;
+}
+#subscribe .s{
+    font-weight: 500;
+    width: fit-content;
+}
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8vw;
+    padding: 15px 40px;
+
+}
+#footer .txt1{
+    display: flex;
+    gap: 40px 
+}
+#footer .txt2{
+    display: flex;
+    gap: 50px;
+}
+.txt2 a{
+    text-decoration: none;
+    color: white;
+}
